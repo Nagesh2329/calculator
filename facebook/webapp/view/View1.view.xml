@@ -1,0 +1,65 @@
+<mvc:View controllerName="facebook.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+     <content > 
+
+			<Panel headerText="Facebook">
+			<FlexBox
+				height="100%"
+				alignItems="Center"
+				justifyContent="Center">
+				  
+		<VBox >
+	
+
+			
+			<Input
+			width="100%"
+				placeholder="value1"
+				value=""
+				          id="value1"
+						  type="Number" />
+				<Input
+				placeholder="value2"
+				value="" id="value2"
+				type="Number"
+				 />
+				 <HBox >
+				<MenuButton text="operator" buttonMode="Split" useDefaultActionOnly="true">
+			<menu>
+				<Menu itemSelected="onMenuAction">
+
+					
+						<items >
+							<MenuItem press="add" text="add" icon="sap-icon://add" />
+							<MenuItem press="sub" text="subtract" icon="sap-icon://less" />
+							<MenuItem press="mult" text="multiply" icon="sap-icon://decline" />
+
+						</items>
+					
+				</Menu>
+			</menu>
+		</MenuButton>
+				 
+				 </HBox>
+				 
+		<Text id="result" text=""></Text>
+		
+		</VBox >
+		
+		
+		
+		
+		
+		
+		
+        
+				
+			</FlexBox>
+		</Panel>
+      
+	  
+        </content >
+    </Page>
+</mvc:View>

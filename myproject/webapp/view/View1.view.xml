@@ -1,0 +1,57 @@
+<mvc:View controllerName="hello.myproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content > 
+
+			<Panel headerText="Facebook">
+			<FlexBox
+				height="100%"
+				alignItems="Center"
+				justifyContent="Center">
+				  <!-- <HBox  > 
+		
+		<Text class="sapUiSmallMargin"  text="Facebook" ></Text>
+		</HBox> -->
+		<VBox >
+		<Text   text="Log in to Facebook" class="sapUiMarginTop "></Text>
+
+			
+			<Input
+			width="100%"
+				placeholder="Email address or phone number"
+				value=""
+				          id="email"
+						  type="Email" />
+				<Input
+				placeholder="password"
+				value="" id="password"
+				type="Password"
+				 />
+				 <HBox >
+				 <Button press="Onlog" width="200px" text="Log in"></Button>
+				 </HBox>
+				  <HBox >
+				  <Text   text="Forgotten account?" class="sapUiMarginTop "></Text>
+				  </HBox>
+				   <HBox >
+				   
+				   <Text   text="--------------or------------------" class="sapUiMarginTop "></Text>
+				   </HBox>
+				 
+				
+				
+				<Button text="Create new account"></Button>
+		
+		
+		</VBox >
+		
+        
+				
+			</FlexBox>
+		</Panel>
+      
+	  
+        </content >
+    </Page>
+</mvc:View>

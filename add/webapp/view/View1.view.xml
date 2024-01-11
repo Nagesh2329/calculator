@@ -1,0 +1,30 @@
+<mvc:View controllerName="addsubmulti.add.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content >
+        <Panel headerText="addition">
+       <FlexBox
+				height="100%"
+				alignItems="Center"
+				justifyContent="Center">
+                <VBox >
+		
+			
+			<Input
+			width="100%"
+				placeholder="value1"
+				value=""
+				          id="value1"
+						  type="number" />
+				<Input
+				placeholder="value2"
+				value="" id="value2"
+				type="Password"
+				 />
+                </FlexBox>
+         </Panel>
+
+        <content />
+    </Page>
+</mvc:View>
